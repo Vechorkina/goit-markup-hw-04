@@ -33,6 +33,7 @@ html {
 .link {
     text-decoration: none;
     display: block;
+    outline: none;
 }
 
 /***убираются точки в списке***/
@@ -586,6 +587,7 @@ fill: var(--social-link-color);
     padding-top: 93px;
     padding-bottom: 34px;
     justify-content: center;
+    box-sizing: inherit;
 }
 
 .line {
@@ -596,7 +598,9 @@ fill: var(--social-link-color);
 .filter-list-item:focus {
     background-color: var(--accent-color);
     color: var(--text-dark-theme-color);
-    }
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
 
 
 .filter-list-item {
@@ -642,6 +646,7 @@ border-radius: 4px;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 94px;
+    box-sizing: inherit;
 }
 
 
@@ -695,8 +700,8 @@ border-radius: 4px;
     margin-bottom: 20px;
 }
 
-.portfolio-img:hover,
-.portfolio-img:focus {
+.img-link:hover,
+.img-link:focus {
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
